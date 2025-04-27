@@ -91,7 +91,7 @@ export default function Home() {
   };
 
   // Wrapper de fetch con token
-  const fetchApi = async <T = any>(url: string): Promise<T> => {
+  const fetchApi = async <T = unknown>(url: string): Promise<T> => {
     const res = await fetch(url, {
       headers: { Authorization: `Bearer ${accessToken}` },
     });

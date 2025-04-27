@@ -57,5 +57,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Spotify Web API](https://developer.spotify.com/documentation/web-api)
+- [Spotify Web API](https://developer.spotify.com/documentation/web-api) (fetch songs)
 - [LRCLIB](https://lrclib.net/) (for lyrics)
