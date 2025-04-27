@@ -206,7 +206,7 @@ export default function Home() {
 
   return (
     <div className="container mx-auto p-8 min-h-screen flex flex-col items-center">
-      <h1 className="text-4xl font-bold mb-4">Lyric Snippet Generator</h1>
+      <h1 className="text-4xl font-bold mb-4">Lyric Finder</h1>
 
       {!accessToken ? (
         // Login View
@@ -319,8 +319,8 @@ export default function Home() {
                     key={idx}
                     onClick={() => handleLineSelect(idx)}
                     className={`whitespace-pre-wrap cursor-pointer p-1 rounded transition-colors duration-150 ${selectedLineIndices.includes(idx)
-                        ? "bg-teal-200 dark:bg-teal-700 font-semibold"
-                        : "hover:bg-gray-200 dark:hover:bg-gray-600"
+                      ? "bg-teal-200 dark:bg-teal-700 font-semibold"
+                      : "hover:bg-gray-200 dark:hover:bg-gray-600"
                       }`}
                   >
                     {line.trim() === "" ? "\u00A0" : line}
@@ -355,7 +355,7 @@ export default function Home() {
                 </button>
                 <div
                   ref={previewRef}
-                  className={`p-6 text-white rounded-t-lg overflow-hidden ${selectedGradient}`}
+                  className={`p-6 text-white rounded-lg overflow-hidden ${selectedGradient}`}
                   style={{ fontFamily: selectedFont, fontSize: "16px", lineHeight: 1.6 }}
                 >
                   {selectedSong.thumbnailUrl && (
@@ -428,8 +428,8 @@ export default function Home() {
                     onClick={exportPngFromModal}
                     disabled={!coverLoaded && !!selectedSong.thumbnailUrl}
                     className={`px-4 py-2 rounded text-white transition-transform duration-200 ease-in-out ${coverLoaded
-                        ? "bg-green-500 hover:bg-green-600 transform hover:scale-105"
-                        : "bg-gray-400 cursor-not-allowed"
+                      ? "bg-green-500 hover:bg-green-600 transform hover:scale-105"
+                      : "bg-gray-400 cursor-not-allowed"
                       }`}
                   >
                     Export as PNG
