@@ -59,4 +59,3 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Spotify Web API](https://developer.spotify.com/documentation/web-api)
 - [LRCLIB](https://lrclib.net/) (for lyrics)
-- [AI Image Generation API] (Specify which one if applicable)
