@@ -1,6 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lyric Finder
 
-## Getting Started
+This is a Next.js application that allows users to log in with their Spotify account, search for songs, view lyrics, and generate an image based on the lyrics.
+
+## Features
+
+- Spotify Authentication: Securely log in using your Spotify account.
+- Song Search: Search for songs available on Spotify.
+- Lyric Display: View the lyrics for the selected song (powered by LRCLIB).
+- Image Generation: Generate a unique image inspired by the song's lyrics.
+
+## Setup
+
+1.  **Clone the repository:**
+    ```bash
+    git clone <repository-url>
+    cd lyric-finder-lrclib
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    ```
+
+3.  **Set up environment variables:**
+    Create a `.env.local` file in the root of the project and add the following variables:
+
+    ```
+    NEXT_PUBLIC_SPOTIFY_CLIENT_ID=YOUR_SPOTIFY_CLIENT_ID
+    NEXT_PUBLIC_SPOTIFY_REDIRECT_URI=http://localhost:3000/callback
+    ```
+
+    - Replace `YOUR_SPOTIFY_CLIENT_ID` with your actual Spotify application Client ID.
+    - Ensure the `NEXT_PUBLIC_SPOTIFY_REDIRECT_URI` matches the Redirect URI configured in your Spotify application settings (usually `http://localhost:3000/callback` for local development).
+
+## Running Locally
 
 First, run the development server:
 
@@ -10,27 +47,16 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Spotify Web API](https://developer.spotify.com/documentation/web-api)
+- [LRCLIB](https://lrclib.net/) (for lyrics)
+- [AI Image Generation API] (Specify which one if applicable)
